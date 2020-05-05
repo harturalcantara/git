@@ -1,8 +1,0 @@
-{
-  "name": "huntweb",
-  "version": "2",
-  "main": "index.js",
-  "repository": "https://github.com/harturalcantara/react.git",
-  "author": "Hartur Alcantara <harturalcantara@gmail.com>",
-  "license": "MIT"
-}
