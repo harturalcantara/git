@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso Java Script</title>
+    </head>
+
+    <body>
+
+        <div id="app"> 
+            <button onclick="mostraAlerta()">Me pressione</button>
+            <button onmouseover="mostraAlerta()">Me pressione</button>
+            <!--
+
+            -->
+            <input type="text" name="nome" id="nome" />
+            <button class="botao"> Adicionar</button> 
+        </div>
+
+        <script>
+            function mostraAlerta(){
+                alert('Botão foi clicado!');
+            }
+            
+            // 
+            //
+
+            var inputElement = document.getElementById('nome'); //busca um id unico na DOM
+            console.log(inputElement);
+
+            var inputElement2 = document.getElementByName('input')[0]; //(acredito q pelo tipo da tag)retorna um vertor de elementos, mas pode indexas para escolher qual
+
+            var inputElement3 = document.getElementsByClassName('nome')[0]; // busca pela tag name
+            
+            //querySelector ele só retorna um elemento
+            //querySelectorAll ele só retorna todos os elementos
+            var inputElement4 = document.querySelector('body div#app input');
+            var inputElement5 = document.querySelector('input [name=nome]'); //busca por atributos
+
+            var inputElement5 = document.querySelectorAll('input'); //todo os elementos
+
+            var inputElementT = document.querySelector('input[name=nome]');
+            var btnElementT = document.querySelector('button.botao'); //referencia a classe
+
+            btnElementT.onclick = function(){
+                var text = inputElement.value;
+                alert(text);
+            }
+
+
+        </script>
+    </body>
+</html>
