@@ -1,14 +1,14 @@
 # git-help
 
-### Comandos básicos para usar Git
+### Basic commands for using Git
 
-A primeira coisa que você deve fazer ao instalar Git é configurar seu nome de usuário e endereço de e-mail. Isto é importante porque cada commit usa esta informação, e ela é carimbada de forma imutável nos commits que você começa a criar:
+The first thing you should do when installing Git is to set up your username and email address. This is important because each commit uses this information, and it is stamped immutably on the commits you start to create:
 
 ```
 $ git config --global user.name "your name"
 $ git config --global user.email "youremail@email.com"
 ```
-Caso queira substituir essa informação com nome diferente para um projeto específico, você pode rodar o comando sem a opção ```--global``` dentro daquele projeto.
+If you want to replace this information with a different name for a specific project, you can run the command without the ``` --global``` option within that project.
 
 
 ``` git clone <Link do repositório> ``` (Baixa o repositório localmente)
