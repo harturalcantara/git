@@ -4,7 +4,7 @@
 
 #### $ git config
 
-Ao instalar o Git você deve definir o seu nome de usuário e endereço de e-mail, pois todos commits no Git utilizam essas informações, e está imutavelmente anexado nos commits que você realiza:
+Ao ter instalado o Git você deve definir o seu nome de usuário e endereço de e-mail, pois todos commits no Git utilizam essas informações, e está imutavelmente anexado nos commits que você realiza:
 
     git config --global user.name "Hartur Alcantara"
     git config --global user.email "alcantara@example.com"
@@ -68,3 +68,19 @@ Você pode obter um projeto Git utilizando duas formas principais.
 
 	git log --stat
 	
+### Branches
+
+O **master** é o branch principal do GIT.
+O **HEAD** é um ponteiro *especial* que indica qual é o branch atual. Por padrão, o **HEAD** aponta para o branch principal, o **master**.
+
+##### Criando um novo branch
+
+	git branch "new-branch"
+	
+##### Trocando para um branch existente
+
+	git checkout "new-branch"
+
+##### Criar um novo branch e trocar 
+
+	git checkout -b bug-456	
