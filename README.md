@@ -9,8 +9,10 @@ Ao ter instalado o Git você deve definir o seu nome de usuário e endereço de 
     git config --global user.name "Hartur Alcantara"
     git config --global user.email "alcantara@example.com"
 
+Caso você queira modificar essas informações com um nome ou endereço de e-mail diferentes para projetos específicos, você pode executar o comando sem a opção ```--global``` quando estiver no projeto.
 
-Você só precisará fazer isso uma vez caso passe a opção ```--global```, pois o Git sempre usará essa informação para qualquer coisa que você faça nesse sistema. Caso você queira modificar essas informações com um nome ou endereço de e-mail diferentes para projetos específicos, você pode executar o comando sem a opção ```--global``` quando estiver no projeto.
+    git config user.name "Hartur Alcantara"
+    git config user.email "alcantara@example.com"
 
 #### $ git help
 Existem três maneiras de obter a ajuda para qualquer um dos comandos Git:
